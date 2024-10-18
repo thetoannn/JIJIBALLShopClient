@@ -182,9 +182,9 @@ const Home = () => {
             <div className="col-md-9 productRow">
               <div className="d-flex align-items-center res-flex-column">
                 <div className="info" style={{ width: "35%" }}>
-                  <h3 className="mb-0 hd">Popular Products</h3>
+                  <h3 className="mb-0 hd">Sản phẩm phổ biến</h3>
                   <p className="text-light text-sml mb-0">
-                    Do not miss the current offers until the end of March.
+                    Sản phẩm được tin dùng
                   </p>
                 </div>
 
@@ -269,9 +269,9 @@ const Home = () => {
 
               <div className="d-flex align-items-center mt-2">
                 <div className="info w-75">
-                  <h3 className="mb-0 hd">NEW PRODUCTS</h3>
+                  <h3 className="mb-0 hd">SẢN PHẨM MỚI</h3>
                   <p className="text-light text-sml mb-0">
-                    New products with updated stocks.
+                    Sản phẩm mới nhất
                   </p>
                 </div>
               </div>
@@ -301,7 +301,7 @@ const Home = () => {
 
               <div className="d-flex align-items-center mt-2">
                 <div className="info">
-                  <h3 className="mb-0 hd">featured products</h3>
+                  <h3 className="mb-0 hd">Sản phẩm đặc trưng</h3>
                   <p className="text-light text-sml mb-0">
                     {/* Do not miss the current offers until the end of March. */}
                   </p>

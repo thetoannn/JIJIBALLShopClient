@@ -46,7 +46,7 @@ const SignIn = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "email can not be blank!",
+        msg: "Email không được để trống!",
       });
       return false;
     }
@@ -55,7 +55,7 @@ const SignIn = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "password can not be blank!",
+        msg: "Mật khẩu không được để trống!",
       });
       return false;
     }
@@ -213,7 +213,7 @@ const SignIn = () => {
           </div>
 
           <form className="mt-3" onSubmit={login}>
-            <h2 className="mb-4">Sign In</h2>
+            <h2 className="mb-4">Đăng nhập</h2>
 
             <div className="form-group">
               <TextField
@@ -230,7 +230,7 @@ const SignIn = () => {
             <div className="form-group">
               <TextField
                 id="standard-basic"
-                label="Password"
+                label="Mật khẩu"
                 type="password"
                 required
                 variant="standard"
@@ -240,11 +240,11 @@ const SignIn = () => {
               />
             </div>
 
-            <a className="border-effect cursor txt">Forgot Password?</a>
+            <a className="border-effect cursor txt">Quên mật khấu?</a>
 
             <div className="d-flex align-items-center mt-3 mb-3 ">
               <Button type="submit" className="btn-blue col btn-lg btn-big">
-                {isLoading === true ? <CircularProgress /> : "Sign In"}
+                {isLoading === true ? <CircularProgress /> : "Đăng nhập"}
               </Button>
               <Link to="/">
                 {" "}
@@ -253,20 +253,20 @@ const SignIn = () => {
                   variant="outlined"
                   onClick={() => context.setisHeaderFooterShow(true)}
                 >
-                  Cancel
+                  Hủy
                 </Button>
               </Link>
             </div>
 
             <p className="txt">
-              Not Registered?{" "}
+              Chưa có tài khoản?{" "}
               <Link to="/signUp" className="border-effect">
-                Sign Up
+                Đăng ký
               </Link>
             </p>
 
             <h6 className="mt-4 text-center font-weight-bold">
-              Or continue with social account
+              Hoặc đăng nhập với tài khoản Google
             </h6>
 
             <Button
@@ -274,7 +274,7 @@ const SignIn = () => {
               variant="outlined"
               onClick={signInWithGoogle}
             >
-              <img src={GoogleImg} /> Sign In with Google
+              <img src={GoogleImg} /> Đăng nhập với Google
             </Button>
           </form>
         </div>

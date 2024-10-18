@@ -162,7 +162,7 @@ const MyAccount = () => {
           context.setAlertBox({
             open: true,
             error: true,
-            msg: "Please select a valid JPG or PNG image file.",
+            msg: "Vui lòng chọn tệp hình ảnh JPG hoặc PNG hợp lệ.",
           });
 
           return false;
@@ -220,7 +220,7 @@ const MyAccount = () => {
                 context.setAlertBox({
                   open: true,
                   error: false,
-                  msg: "Images Uploaded!",
+                  msg: "Đã tải hình ảnh lên!",
                 });
                 setUploading(false);
               }, 200);
@@ -263,14 +263,14 @@ const MyAccount = () => {
         context.setAlertBox({
           open: true,
           error: false,
-          msg: "user updated",
+          msg: "người dùng đã cập nhật",
         });
       });
     } else {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill all the details",
+        msg: "Vui lòng điền đầy đủ thông tin",
       });
       return false;
     }
@@ -289,7 +289,7 @@ const MyAccount = () => {
         context.setAlertBox({
           open: true,
           error: true,
-          msg: "Password and confirm password not match",
+          msg: "Mật khẩu và xác nhận mật khẩu không khớp",
         });
       } else {
         const user = JSON.parse(localStorage.getItem("user"));
@@ -313,7 +313,7 @@ const MyAccount = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill all the details",
+        msg: "Vui lòng điền đầy đủ thông tin",
       });
       return false;
     }
@@ -322,7 +322,7 @@ const MyAccount = () => {
   return (
     <section className="section myAccountPage">
       <div className="container">
-        <h2 className="hd">My Account</h2>
+        <h2 className="hd">Tài khoản</h2>
 
         <Box sx={{ width: "100%" }} className="myAccBox card border-0">
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -331,8 +331,8 @@ const MyAccount = () => {
               onChange={handleChange}
               aria-label="basic tabs example"
             >
-              <Tab label="Edit Profile" {...a11yProps(0)} />
-              <Tab label="Change Password" {...a11yProps(1)} />
+              <Tab label="Chỉnh sửa profile" {...a11yProps(0)} />
+              <Tab label="Đổi mật khẩu" {...a11yProps(1)} />
             </Tabs>
           </Box>
           <CustomTabPanel value={value} index={0}>
@@ -415,7 +415,7 @@ const MyAccount = () => {
                       type="submit"
                       className="btn-blue bg-red btn-lg btn-big"
                     >
-                      {isLoading === true ? <CircularProgress /> : "Save"}
+                      {isLoading === true ? <CircularProgress /> : "Lưu"}
                     </Button>
                   </div>
                 </div>
@@ -430,7 +430,7 @@ const MyAccount = () => {
                     <div className="col-md-4">
                       <div className="form-group">
                         <TextField
-                          label="Old Password"
+                          label="Nhập mật khẩu cũ"
                           variant="outlined"
                           className="w-100"
                           name="oldPassword"
@@ -442,7 +442,7 @@ const MyAccount = () => {
                     <div className="col-md-4">
                       <div className="form-group">
                         <TextField
-                          label="New password"
+                          label="Nhập mật khẩu mới"
                           variant="outlined"
                           className="w-100"
                           name="password"
@@ -454,7 +454,7 @@ const MyAccount = () => {
                     <div className="col-md-4">
                       <div className="form-group">
                         <TextField
-                          label="Confirm Password"
+                          label="Xác nhận mật khẩu"
                           variant="outlined"
                           className="w-100"
                           name="confirmPassword"
@@ -470,7 +470,7 @@ const MyAccount = () => {
                       className="btn-blue bg-red btn-lg btn-big"
                     >
                       {" "}
-                      Save
+                      Lưu
                     </Button>
                   </div>
                 </div>

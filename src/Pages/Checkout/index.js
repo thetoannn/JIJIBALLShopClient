@@ -61,7 +61,7 @@ const Checkout = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill full name ",
+        msg: "Vui lòng nhập họ tên",
       });
       return false;
     }
@@ -70,7 +70,7 @@ const Checkout = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill country ",
+        msg: "Vui lòng nhập quốc gia",
       });
       return false;
     }
@@ -79,7 +79,7 @@ const Checkout = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill Street address",
+        msg: "Vui lòng điền Địa chỉ đường phố",
       });
       return false;
     }
@@ -88,7 +88,7 @@ const Checkout = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill  Street address",
+        msg: "Vui lòng nhập Địa chỉ cụ thể",
       });
       return false;
     }
@@ -97,7 +97,7 @@ const Checkout = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill city ",
+        msg: "Vui lòng nhập thành phố ",
       });
       return false;
     }
@@ -106,7 +106,7 @@ const Checkout = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill state ",
+        msg: "Vui lòng nhập quận/huyện ",
       });
       return false;
     }
@@ -115,7 +115,7 @@ const Checkout = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill zipCode ",
+        msg: "Vui lòng nhập mã bưu chính",
       });
       return false;
     }
@@ -124,7 +124,7 @@ const Checkout = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill phone Number ",
+        msg: "Vui lòng nhập số điện thoại ",
       });
       return false;
     }
@@ -133,7 +133,7 @@ const Checkout = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please fill email",
+        msg: "Vui lòng nhập email",
       });
       return false;
     }
@@ -211,13 +211,13 @@ const Checkout = () => {
         <form className="checkoutForm" onSubmit={checkout}>
           <div className="row">
             <div className="col-md-8">
-              <h2 className="hd">BILLING DETAILS</h2>
+              <h2 className="hd">CHI TIẾT THANH TOÁN</h2>
 
               <div className="row mt-3">
                 <div className="col-md-6">
                   <div className="form-group">
                     <TextField
-                      label="Full Name *"
+                      label="Họ tên *"
                       variant="outlined"
                       className="w-100"
                       size="small"
@@ -230,7 +230,7 @@ const Checkout = () => {
                 <div className="col-md-6">
                   <div className="form-group">
                     <TextField
-                      label="Country *"
+                      label="Địa chỉ *"
                       variant="outlined"
                       className="w-100"
                       size="small"
@@ -241,13 +241,13 @@ const Checkout = () => {
                 </div>
               </div>
 
-              <h6>Street address *</h6>
+              <h6>Địa chỉ chi tiết*</h6>
 
               <div className="row">
                 <div className="col-md-12">
                   <div className="form-group">
                     <TextField
-                      label="House number and street name"
+                      label="Số nhà hoặc tên đường"
                       variant="outlined"
                       className="w-100"
                       size="small"
@@ -258,7 +258,7 @@ const Checkout = () => {
 
                   <div className="form-group">
                     <TextField
-                      label="Apartment, suite, unit, etc. (optional)"
+                      label="Căn hộ, phòng suite, đơn vị, v.v. (tùy chọn)"
                       variant="outlined"
                       className="w-100"
                       size="small"
@@ -269,13 +269,13 @@ const Checkout = () => {
                 </div>
               </div>
 
-              <h6>Town / City *</h6>
+              <h6>Tỉnh / Thành phố *</h6>
 
               <div className="row">
                 <div className="col-md-12">
                   <div className="form-group">
                     <TextField
-                      label="City"
+                      label="Thành phố"
                       variant="outlined"
                       className="w-100"
                       size="small"
@@ -286,13 +286,13 @@ const Checkout = () => {
                 </div>
               </div>
 
-              <h6>State / County *</h6>
+              <h6>Quận / Huyện*</h6>
 
               <div className="row">
                 <div className="col-md-12">
                   <div className="form-group">
                     <TextField
-                      label="State"
+                      label="Quận/huyện"
                       variant="outlined"
                       className="w-100"
                       size="small"
@@ -303,13 +303,13 @@ const Checkout = () => {
                 </div>
               </div>
 
-              <h6>Postcode / ZIP *</h6>
+              <h6>Mã bưu chính / ZIP *</h6>
 
               <div className="row">
                 <div className="col-md-12">
                   <div className="form-group">
                     <TextField
-                      label="ZIP Code"
+                      label="Mã bưu chính"
                       variant="outlined"
                       className="w-100"
                       size="small"
@@ -324,7 +324,7 @@ const Checkout = () => {
                 <div className="col-md-6">
                   <div className="form-group">
                     <TextField
-                      label="Phone Number"
+                      label="Số điện thoại"
                       variant="outlined"
                       className="w-100"
                       size="small"
@@ -337,7 +337,7 @@ const Checkout = () => {
                 <div className="col-md-6">
                   <div className="form-group">
                     <TextField
-                      label="Email Address"
+                      label="Email"
                       variant="outlined"
                       className="w-100"
                       size="small"
@@ -351,13 +351,13 @@ const Checkout = () => {
 
             <div className="col-md-4">
               <div className="card orderInfo">
-                <h4 className="hd">YOUR ORDER</h4>
+                <h4 className="hd">Đơn hàng của bạn</h4>
                 <div className="table-responsive mt-3">
                   <table className="table table-borderless">
                     <thead>
                       <tr>
-                        <th>Product</th>
-                        <th>Subtotal</th>
+                        <th>Sản phẩm</th>
+                        <th>Tổng cộng</th>
                       </tr>
                     </thead>
 
@@ -382,7 +382,7 @@ const Checkout = () => {
                         })}
 
                       <tr>
-                        <td>Subtotal </td>
+                        <td>Tổng cộng </td>
 
                         <td>
                           {(cartData?.length !== 0
@@ -406,7 +406,7 @@ const Checkout = () => {
                   type="submit"
                   className="btn-blue bg-red btn-lg btn-big"
                 >
-                  <IoBagCheckOutline /> &nbsp; Checkout
+                  <IoBagCheckOutline /> &nbsp; Thanh toán
                 </Button>
               </div>
             </div>

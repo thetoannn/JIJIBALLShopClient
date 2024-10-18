@@ -49,7 +49,7 @@ const Navigation = (props) => {
                 <span className="icon1 mr-2">
                   <IoIosMenu />
                 </span>
-                <span className="text">ALL CATEGORIES</span>
+                <span className="text">Tất cả danh mục</span>
                 <span className="icon2  ml-2">
                   <FaAngleDown />
                 </span>
@@ -194,7 +194,7 @@ const Navigation = (props) => {
                     <div className="pt-3 pl-3 pr-3">
                       <Link to="/signIn">
                         <Button className="btn-blue w-100 btn-big">
-                          Sign In
+                          Đăng nhập
                         </Button>
                       </Link>
                     </div>

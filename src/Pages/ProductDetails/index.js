@@ -131,7 +131,7 @@ const ProductDetails = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please Login first",
+        msg: "Vui lòng đăng nhập trước",
       });
     }
   };
@@ -187,7 +187,7 @@ const ProductDetails = () => {
           context.setAlertBox({
             open: true,
             error: false,
-            msg: "the product added in my list",
+            msg: "sản phẩm đã được thêm vào danh sách của tôi",
           });
 
           fetchDataFromApi(
@@ -209,7 +209,7 @@ const ProductDetails = () => {
       context.setAlertBox({
         open: true,
         error: true,
-        msg: "Please Login to continue",
+        msg: "Bạn cần đăng nhập để tiếp tục",
       });
     }
   };
@@ -239,7 +239,7 @@ const ProductDetails = () => {
                 <ul className="list list-inline d-flex align-items-center">
                   <li className="list-inline-item">
                     <div className="d-flex align-items-center">
-                      <span className="text-light mr-2">Brands : </span>
+                      <span className="text-light mr-2">Hãng : </span>
                       <span>{productData?.brand}</span>
                     </div>
                   </li>
@@ -258,7 +258,7 @@ const ProductDetails = () => {
                         className="text-light cursor ml-2"
                         onClick={gotoReviews}
                       >
-                        {reviewsData?.length} Review
+                        {reviewsData?.length} Đánh giá
                       </span>
                     </div>
                   </li>
@@ -278,16 +278,16 @@ const ProductDetails = () => {
                 </div>
 
                 {productData?.countInStock >= 1 ? (
-                  <span className="badge badge-success">IN STOCK</span>
+                  <span className="badge badge-success">CÒN HÀNG</span>
                 ) : (
-                  <span className="badge badge-danger">OUT OF STOCK</span>
+                  <span className="badge badge-danger">HẾT HÀNG</span>
                 )}
 
-                <p className="mt-3">Description: {productData?.description}</p>
+                <p className="mt-3">Mô tả: {productData?.description}</p>
 
                 {productData?.productRam?.length !== 0 && (
                   <div className="productSize d-flex align-items-center">
-                    <span>Material:</span>
+                    <span>Chất liệu:</span>
                     <ul
                       className={`list list-inline mb-0 pl-4 ${tabError === true && "error"
                         }`}
@@ -311,7 +311,7 @@ const ProductDetails = () => {
 
                 {productData?.size?.length !== 0 && (
                   <div className="productSize d-flex align-items-center">
-                    <span>Size:</span>
+                    <span>Kích thước:</span>
                     <ul
                       className={`list list-inline mb-0 pl-4 ${tabError === true && "error"
                         }`}
@@ -335,7 +335,7 @@ const ProductDetails = () => {
 
                 {productData?.productWeight?.length !== 0 && (
                   <div className="productSize d-flex align-items-center">
-                    <span>Weight:</span>
+                    <span>Trọng lượng:</span>
                     <ul
                       className={`list list-inline mb-0 pl-4 ${tabError === true && "error"
                         }`}
@@ -372,13 +372,13 @@ const ProductDetails = () => {
                       <BsCartFill /> &nbsp;
                       {context.addingInCart === true
                         ? "adding..."
-                        : " Add to cart"}
+                        : " Thêm vào giỏ hàng"}
                     </Button>
 
                     <Tooltip
                       title={`${isAddedToMyList === true
-                        ? "Added to Wishlist"
-                        : "Add to Wishlist"
+                        ? "Đã thêm vào mục yêu thích"
+                        : "Thêm vào mục yêu thích"
                         }`}
                       placement="top"
                     >
@@ -394,7 +394,7 @@ const ProductDetails = () => {
                       </Button>
                     </Tooltip>
 
-                    <Tooltip title="Add to Compare" placement="top">
+                    <Tooltip title="So sánh" placement="top">
                       <Button className="btn-blue btn-lg btn-big btn-circle ml-2">
                         <MdOutlineCompareArrows />
                       </Button>
@@ -417,7 +417,7 @@ const ProductDetails = () => {
                       setActiveTabs(0);
                     }}
                   >
-                    Description
+                    Mô tả
                   </Button>
                 </li>
                 <li className="list-inline-item">
@@ -427,7 +427,7 @@ const ProductDetails = () => {
                       setActiveTabs(1);
                     }}
                   >
-                    Additional info
+                    Thông tin thêm
                   </Button>
                 </li>
                 <li className="list-inline-item">
@@ -437,7 +437,7 @@ const ProductDetails = () => {
                       setActiveTabs(2);
                     }}
                   >
-                    Reviews ({reviewsData?.length})
+                    Đánh giá ({reviewsData?.length})
                   </Button>
                 </li>
               </ul>
@@ -452,7 +452,7 @@ const ProductDetails = () => {
                 <div className="tabContent">
                   <div className="table-responsive">
                     <table className="table table-bordered">
-                      <tbody>
+                      {/* <tbody>
                         <tr className="stand-up">
                           <th>Stand Up</th>
                           <td>
@@ -537,7 +537,7 @@ const ProductDetails = () => {
                             <p>M, S</p>
                           </td>
                         </tr>
-                      </tbody>
+                      </tbody> */}
                     </table>
                   </div>
                 </div>
@@ -547,7 +547,7 @@ const ProductDetails = () => {
                 <div className="tabContent">
                   <div className="row">
                     <div className="col-md-8">
-                      <h3>Customer questions & answers</h3>
+                      <h3>Hỏi đáp</h3>
                       <br />
 
                       {reviewsData?.length !== 0 &&
@@ -587,11 +587,11 @@ const ProductDetails = () => {
                       <br className="res-hide" />
 
                       <form className="reviewForm" onSubmit={addReview}>
-                        <h4>Add a review</h4>
+                        <h4>Thêm đánh giá</h4>
                         <div className="form-group">
                           <textarea
                             className="form-control shadow"
-                            placeholder="Write a Review"
+                            placeholder="Viết đánh giá"
                             name="review"
                             value={reviews.review}
                             onChange={onChangeInput}
@@ -623,7 +623,7 @@ const ProductDetails = () => {
                                 className="loader"
                               />
                             ) : (
-                              "Submit Review"
+                              "Gửi đánh giá"
                             )}
                           </Button>
                         </div>
@@ -639,7 +639,7 @@ const ProductDetails = () => {
 
           {relatedProductData?.length !== 0 && (
             <RelatedProducts
-              title="RELATED PRODUCTS"
+              title="Sản phẩm tương tự"
               data={relatedProductData}
             />
           )}

@@ -3,7 +3,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { TbDiscount2 } from "react-icons/tb";
 import { CiBadgeDollar } from "react-icons/ci";
 import { Link } from "react-router-dom";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebook, FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlinePayments } from "react-icons/md";
@@ -29,18 +29,18 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-6">
               <p className="text-white mb-1">
-                Free shipping with all orders placed via the web
+                Miễn phí vận chuyển với tất cả các đơn hàng được đặt qua web
               </p>
-              <h3 className="text-white">Join our newsletter and get...</h3>
+              <h3 className="text-white">Tham gia bản tin của chúng tôi và nhận...</h3>
               <p className="text-light">
-                Join our email subscription now to get updates on
-                <br /> promotions and coupons.
+              Tham gia đăng ký email của chúng tôi ngay bây giờ để nhận thông tin cập nhật về
+                <br /> khuyến mãi và phiếu giảm giá.
               </p>
 
               <form className="mt-4">
                 <IoMailOutline />
-                <input type="text" placeholder="Your Email Address" />
-                <Button>Subscribe</Button>
+                <input type="text" placeholder="Nhập Email của " />
+                <Button>Đăng ký</Button>
               </form>
             </div>
 
@@ -57,202 +57,85 @@ const Footer = () => {
               <span>
                 <TbTruckDelivery />
               </span>
-              <span className="ml-2">Nationwide shipping <br />
-                Payment upon receipt of goods</span>
+              <span className="ml-2">Vận chuyển toàn quốc <br />
+                Thanh toán khi nhận hàng</span>
             </div>
 
             <div className="col d-flex align-items-center">
               <span>
                 <MdWorkspacePremium />
               </span>
-              <span className="ml-2">Quality Assurance <br />
-              Quality assured products</span>
+              <span className="ml-2">Đảm bảo chất lượng <br />
+                Sản phẩm đảm bảo chất lượng</span>
             </div>
 
             <div className="col d-flex align-items-center">
               <span>
                 <MdOutlinePayments />
               </span>
-              <span className="ml-2">Make PAYMENT <br />
-              With multiple METHODS</span>
+              <span className="ml-2">Tiến hành THANH TOÁN <br />
+                Với nhiều PHƯƠNG THỨC</span>
             </div>
 
             <div className="col d-flex align-items-center">
               <span>
                 <MdCurrencyExchange />
               </span>
-              <span className="ml-2">Change to new product <br />
-              If the product is defective</span>
+              <span className="ml-2">Đổi sản phẩm mới <br />
+                nếu sản phẩm lỗi</span>
             </div>
-          </div>
-
-          <div className="row mt-5 linksWrap">
-            <div className="col">
-              <h5>VỢT PICKLEBALL</h5>
-              <ul>
-                <li>
-                  <Link to="#">Lotus</Link>
-                </li>
-                <li>
-                  <Link to="#">Sypik</Link>
-                </li>
-                <li>
-                  <Link to="#">Kamito</Link>
-                </li>
-                <li>
-                  <Link to="#">Star Pickleball</Link>
-                </li>
-                {/* <li>
-                  <Link to="#">Exotic Fruits & Veggies</Link>
-                </li>
-                <li>
-                  <Link to="#">Packaged Produce</Link>
-                </li>
-                <li>
-                  <Link to="#">Party Trays</Link>
-                </li> */}
-              </ul>
-            </div>
-
-            <div className="col">
-              <h5>PHỤ KIỆN PICKLEBALL</h5>
-              <ul>
-                {/* <li>
-                  <Link to="#">Fresh Vegetables</Link>
-                </li>
-                <li>
-                  <Link to="#">Herbs & Seasonings</Link>
-                </li>
-                <li>
-                  <Link to="#">Fresh Fruits</Link>
-                </li>
-                <li>
-                  <Link to="#">Cuts & Sprouts</Link>
-                </li>
-                <li>
-                  <Link to="#">Exotic Fruits & Veggies</Link>
-                </li>
-                <li>
-                  <Link to="#">Packaged Produce</Link>
-                </li>
-                <li>
-                  <Link to="#">Party Trays</Link>
-                </li> */}
-              </ul>
-            </div>
-
-            <div className="col">
-              <h5>BÓNG PICKLEBALL</h5>
-              <ul>
-                <li>
-                  <Link to="#">Fraklin</Link>
-                </li>
-                <li>
-                  <Link to="#">Falcos</Link>
-                </li>
-                <li>
-                  <Link to="#">Set Bóng Pickleball</Link>
-                </li>
-                {/* <li>
-                  <Link to="#">Cuts & Sprouts</Link>
-                </li>
-                <li>
-                  <Link to="#">Exotic Fruits & Veggies</Link>
-                </li>
-                <li>
-                  <Link to="#">Packaged Produce</Link>
-                </li>
-                <li>
-                  <Link to="#">Party Trays</Link>
-                </li> */}
-              </ul>
-            </div>
-
-            <div className="col">
-              <h5>GIÀY PICKLEBALL</h5>
-              <ul>
-                <li>
-                  <Link to="#">Kamito</Link>
-                </li>
-                {/* <li>
-                  <Link to="#">Herbs & Seasonings</Link>
-                </li>
-                <li>
-                  <Link to="#">Fresh Fruits</Link>
-                </li>
-                <li>
-                  <Link to="#">Cuts & Sprouts</Link>
-                </li>
-                <li>
-                  <Link to="#">Exotic Fruits & Veggies</Link>
-                </li>
-                <li>
-                  <Link to="#">Packaged Produce</Link>
-                </li>
-                <li>
-                  <Link to="#">Party Trays</Link>
-                </li> */}
-              </ul>
-            </div>
-
-            <div className="col">
-              <h5>QUẤN CÁN VỢT</h5>
-              <ul>
-                {/* <li>
-                  <Link to="#">Fresh Vegetables</Link>
-                </li>
-                <li>
-                  <Link to="#">Herbs & Seasonings</Link>
-                </li>
-                <li>
-                  <Link to="#">Fresh Fruits</Link>
-                </li>
-                <li>
-                  <Link to="#">Cuts & Sprouts</Link>
-                </li>
-                <li>
-                  <Link to="#">Exotic Fruits & Veggies</Link>
-                </li>
-                <li>
-                  <Link to="#">Packaged Produce</Link>
-                </li>
-                <li>
-                  <Link to="#">Party Trays</Link>
-                </li> */}
-              </ul>
-            </div>
-          </div>
-
-          <div className="copyright mt-3 pt-3 pb-3 d-flex">
-            <p className="mb-0">
-              <br />
-              © JIJIBALL Shop <br />
-              Copyright 2024. All rights reserved
-            </p>
-            <ul className="list list-inline ml-auto mb-0 socials">
-              <li className="list-inline-item">
-                <Link to="https://web.facebook.com/profile.php?id=61566880312514">
-                  <FaFacebookF />
-                </Link>
-              </li>
-
-              <li className="list-inline-item">
-                <Link to="#">
-                  <FaTwitter />
-                </Link>
-              </li>
-
-              <li className="list-inline-item">
-                <Link to="#">
-                  <FaInstagram />
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
       </footer>
+      <section id="footer">
+        <div id="footer-container">
+          <div id="head-footer" style={{width: "60%"}}>
+            <div id="logo-footer">
+              <h1><a style={{ color: 'white', fontWeight: 'bold', textDecoration: 'none' }} href="/"> Ji Ji Ball </a> </h1>
+              <p>Phục vụ những nhu cầu thiết yếu của cộng đồng PICKLEBALL</p>
+            </div>
+          </div>
+          <div id="text-link" style={{width: "60%"}}>
+            <div className="links">
+              <div id="link-info">
+                <h4>Về chúng tôi</h4>
+                <p>Giới thiệu</p>
+                <p>Hướng dẫn sử dụng</p>
+                <p>Phản hồi, góp ý</p>
+              </div>
+              <div id="link-info">
+                <h4>Hợp tác và liên kết</h4>
+                <p>
+                  Cùng JIJI Pickleball phát triển cộng đồng Pickleball tại Việt Nam
+                </p>
+                <div id="contact">
+                  <h4>Liên hệ với chúng tôi qua:</h4>
+                  <div id="social-icons" >
+                    <a
+                      href="https://web.facebook.com/profile.php?id=61566880312514"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaFacebook />
+                    </a>
+                    <a
+                      href="https://zalo.me"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Zalo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
+
+
 
 export default Footer;

@@ -119,7 +119,7 @@ const ProductModal = (props) => {
                     context.setAlertBox({
                         open: true,
                         error: false,
-                        msg: "the product added in my list"
+                        msg: "sản phẩm đã được thêm vào yêu thích"
                     })
                 } else {
                     context.setAlertBox({
@@ -134,7 +134,7 @@ const ProductModal = (props) => {
             context.setAlertBox({
                 open: true,
                 error: true,
-                msg: "Please Login to continue"
+                msg: "Bạn cần đăng nhập để tiếp tục"
             })
         }
 

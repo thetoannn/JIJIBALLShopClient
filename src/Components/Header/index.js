@@ -122,8 +122,8 @@ const Header = () => {
           <div className="top-strip bg-blue">
             <div className="container">
               <p className="mb-0 mt-0 text-center">
-                Due to the <b>COVID 19</b> epidemic, orders may be processed
-                with a slight delay
+                Do dịch bệnh <b>COVID 19</b>, đơn hàng có thể được xử lý
+                với một chút chậm trễ
               </p>
             </div>
           </div>
@@ -176,7 +176,7 @@ const Header = () => {
                     {context.isLogin !== true && context.windowWidth > 992 && (
                       <Link to="/signIn">
                         <Button className="btn-blue btn-round mr-3">
-                          Sign In
+                          Đăng nhập
                         </Button>
                       </Link>
                     )}
@@ -230,7 +230,7 @@ const Header = () => {
                               <ListItemIcon>
                                 <FaUserAlt fontSize="small" />
                               </ListItemIcon>
-                              My Account
+                              Tài khoản của tôi
                             </MenuItem>
                           </Link>
                           <Link to="/orders">
@@ -238,7 +238,7 @@ const Header = () => {
                               <ListItemIcon>
                                 <FaClipboardCheck fontSize="small" />
                               </ListItemIcon>
-                              Orders
+                              Đơn hàng
                             </MenuItem>
                           </Link>
                           <Link to="/my-list">
@@ -246,14 +246,14 @@ const Header = () => {
                               <ListItemIcon>
                                 <FaHeart fontSize="small" />
                               </ListItemIcon>
-                              My List
+                              Yêu thích
                             </MenuItem>
                           </Link>
                           <MenuItem onClick={logout}>
                             <ListItemIcon>
                               <RiLogoutCircleRFill fontSize="small" />
                             </ListItemIcon>
-                            Logout
+                            Đăng xuất
                           </MenuItem>
                         </Menu>
                       </div>
@@ -272,7 +272,7 @@ const Header = () => {
                           )?.toLocaleString("vi-VN", {
                             style: "currency",
                             currency: "VND",
-                        })}
+                          })}
                         </span>
                       )}
 
@@ -319,7 +319,7 @@ const Header = () => {
               <Button className="circle">
                 <div className="d-flex align-items-center justify-content-center flex-column">
                   <IoHomeOutline />
-                  <span className="title">Home</span>
+                  <span className="title">Trang chủ</span>
                 </div>
               </Button>
             </Link>
@@ -331,7 +331,7 @@ const Header = () => {
               }}>
                 <div className="d-flex align-items-center justify-content-center flex-column">
                   <CiFilter />
-                  <span className="title">Filters</span>
+                  <span className="title">Lọc</span>
                 </div>
               </Button>
             )}
@@ -339,7 +339,7 @@ const Header = () => {
             <Button className="circle" onClick={openSearch}>
               <div className="d-flex align-items-center justify-content-center flex-column">
                 <IoIosSearch />
-                <span className="title">Search</span>
+                <span className="title">Tìm kiếm</span>
               </div>
             </Button>
 
@@ -347,7 +347,7 @@ const Header = () => {
               <Button className="circle">
                 <div className="d-flex align-items-center justify-content-center flex-column">
                   <IoMdHeartEmpty />
-                  <span className="title">Wishlist</span>
+                  <span className="title">Yêu thích</span>
                 </div>
               </Button>
             </Link>
@@ -356,7 +356,7 @@ const Header = () => {
               <Button className="circle">
                 <div className="d-flex align-items-center justify-content-center flex-column">
                   <IoBagCheckOutline />
-                  <span className="title">Orders</span>
+                  <span className="title">Đã đặt</span>
                 </div>
               </Button>
             </Link>
@@ -366,7 +366,7 @@ const Header = () => {
               <Button className="circle">
                 <div className="d-flex align-items-center justify-content-center flex-column">
                   <FaRegUser />
-                  <span className="title">Account</span>
+                  <span className="title">Tài khoản</span>
                 </div>
               </Button>
             </Link>

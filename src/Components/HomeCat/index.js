@@ -14,7 +14,7 @@ const HomeCat = (props) => {
     return (
         <section className="homeCat pb-2">
             <div className="container">
-                <h3 className="mb-3 hd">Featured Categories</h3>
+                <h3 className="mb-3 hd">Danh mục nổi bật</h3>
                 <Swiper
                     slidesPerView={8}
                     spaceBetween={0}

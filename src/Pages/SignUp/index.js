@@ -51,7 +51,7 @@ const SignUp = () => {
         context.setAlertBox({
           open: true,
           error: true,
-          msg: "name can not be blank!",
+          msg: "name không được để trống!",
         });
         return false;
       }
@@ -60,7 +60,7 @@ const SignUp = () => {
         context.setAlertBox({
           open: true,
           error: true,
-          msg: "email can not be blank!",
+          msg: "email không được để trống!",
         });
         return false;
       }
@@ -69,7 +69,7 @@ const SignUp = () => {
         context.setAlertBox({
           open: true,
           error: true,
-          msg: "phone can not be blank!",
+          msg: "phone không được để trống!",
         });
         return false;
       }
@@ -78,7 +78,7 @@ const SignUp = () => {
         context.setAlertBox({
           open: true,
           error: true,
-          msg: "password can not be blank!",
+          msg: "password không được để trống!",
         });
         return false;
       }
@@ -176,7 +176,7 @@ const SignUp = () => {
         context.setAlertBox({
           open: true,
           error: false,
-          msg: "User authentication Successfully!",
+          msg: "Xác thực thành công!",
         });
 
         // window.location.href = "/";
@@ -225,13 +225,13 @@ const SignUp = () => {
           </div>
 
           <form className="mt-2" onSubmit={register}>
-            <h2 className="mb-3">Sign Up</h2>
+            <h2 className="mb-3">Đăng ký</h2>
 
             <div className="row">
               <div className="col-md-6">
                 <div className="form-group">
                   <TextField
-                    label="Name"
+                    label="Tên đăng nhập"
                     name="name"
                     onChange={onchangeInput}
                     type="text"
@@ -244,7 +244,7 @@ const SignUp = () => {
               <div className="col-md-6">
                 <div className="form-group">
                   <TextField
-                    label="Phone No."
+                    label="Số điện thoại"
                     name="phone"
                     onChange={onchangeInput}
                     type="number"
@@ -269,7 +269,7 @@ const SignUp = () => {
             <div className="form-group">
               <TextField
                 id="standard-basic"
-                label="Password"
+                label="Mật khẩu"
                 name="password"
                 onChange={onchangeInput}
                 type="password"
@@ -278,7 +278,7 @@ const SignUp = () => {
               />
             </div>
 
-            <a className="border-effect cursor txt">Forgot Password?</a>
+            <a className="border-effect cursor txt">Quên mật khẩu?</a>
 
             <div className="d-flex align-items-center mt-3 mb-3 ">
               <div className="row w-100">
@@ -288,7 +288,7 @@ const SignUp = () => {
                     disabled={isLoading === true ? true : false}
                     className="btn-blue w-100 btn-lg btn-big"
                   >
-                    {isLoading === true ? <CircularProgress /> : "Sign Up"}
+                    {isLoading === true ? <CircularProgress /> : "Đăng ký"}
                   </Button>
                 </div>
                 <div className="col-md-6 pr-0">
@@ -299,7 +299,7 @@ const SignUp = () => {
                       variant="outlined"
                       onClick={() => context.setisHeaderFooterShow(true)}
                     >
-                      Cancel
+                      Hủy
                     </Button>
                   </Link>
                 </div>
@@ -307,14 +307,14 @@ const SignUp = () => {
             </div>
 
             <p className="txt">
-              Not Registered?{" "}
+              Đã có tài khoản?{" "}
               <Link to="/signIn" className="border-effect">
-                Sign In
+                Đăng nhập
               </Link>
             </p>
 
             <h6 className="mt-4 text-center font-weight-bold">
-              Or continue with social account
+              Hoặc đăng nhập với tài khoản Google
             </h6>
 
             <Button
@@ -322,7 +322,7 @@ const SignUp = () => {
               variant="outlined"
               onClick={signInWithGoogle}
             >
-              <img src={GoogleImg} /> Sign In with Google
+              <img src={GoogleImg} /> Đăng nhập với Google
             </Button>
           </form>
         </div>

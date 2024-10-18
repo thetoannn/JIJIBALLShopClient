@@ -75,7 +75,7 @@ const Sidebar = (props) => {
                 }
 
                 <div className="filterBox">
-                    <h6>PRODUCT CATEGORIES</h6>
+                    <h6>Danh mục sản phẩm</h6>
 
                     <div className='scroll'>
                         <RadioGroup
@@ -102,7 +102,7 @@ const Sidebar = (props) => {
 
 
                 <div className="filterBox">
-                    <h6>FILTER BY PRICE</h6>
+                    <h6>Lọc theo giá sản phẩm</h6>
 
                     <RangeSlider value={value} onInput={setValue} min={0} max={10000000} step={5} />
 
@@ -121,7 +121,7 @@ const Sidebar = (props) => {
 
 
                 <div className="filterBox">
-                    <h6>FILTER BY RATING</h6>
+                    <h6>Lọc theo đánh giá</h6>
 
                     <div className='scroll pl-0'>
                         {

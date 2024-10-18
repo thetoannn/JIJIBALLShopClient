@@ -56,24 +56,24 @@ const Orders = () => {
         <>
             <section className="section">
                 <div className='container'>
-                    <h2 className='hd'>Orders</h2>
+                    <h2 className='hd'>Đơn hàng</h2>
 
                     <div className='table-responsive orderTable'>
                         <table className='table table-striped table-bordered'>
                             <thead className='thead-light'>
                                 <tr>
-                                    <th>Order Id</th>
-                                    <th>Paymant Id</th>
-                                    <th>Products</th>
-                                    <th>Name</th>
-                                    <th>Phone Number</th>
-                                    <th>Address</th>
-                                    <th>Pincode</th>
-                                    <th>Total Amount</th>
+                                    <th>Id đơn hàng</th>
+                                    <th>Id thanh toán</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Tên</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Mã PIN</th>
+                                    <th>Tổng số lượng</th>
                                     <th>Email</th>
-                                    <th>User Id</th>
-                                    <th>Order Status</th>
-                                    <th>Date</th>
+                                    <th>Id người dùng</th>
+                                    <th>Ghi chú</th>
+                                    <th>Ngày đặt</th>
                                 </tr>
                             </thead>
 
