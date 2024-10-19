@@ -131,7 +131,7 @@ const Header = () => {
                     </Button>
                   )}
 
-                  <Link to={"/"} className="logo">
+                  <Link to={"https://jijiball.com/"} className="logo">
                     <img src={Logo} alt="Logo" style={{ width: "50%" }} />
                   </Link>
 
