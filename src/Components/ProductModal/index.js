@@ -176,7 +176,7 @@ const ProductModal = (props) => {
                             })}</span>
                         </div>
 
-                        <span className="badge bg-success">IN STOCK</span>
+                        <span className="badge bg-success">CÒN HÀNG</span>
 
                         <p className='mt-3'>{props?.data?.description}</p>
 

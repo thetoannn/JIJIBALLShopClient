@@ -188,10 +188,10 @@ const ProductItem = (props) => {
                     <Link to={`/product/${props?.itemView === 'recentlyView' ? props.item?.prodId : props.item?.id}`}><h4>{props?.item?.name?.substr(0, 25) + '...'}</h4></Link>
 
                     {
-                        props?.item?.countInStock >= 1 ? <span className="text-success d-block">In Stock</span>
+                        props?.item?.countInStock >= 1 ? <span className="text-success d-block">Còn hàng</span>
                             :
 
-                            <span className="text-danger d-block">Out of Stock</span>
+                            <span className="text-danger d-block">Hết hàng</span>
 
                     }
 
