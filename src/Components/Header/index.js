@@ -119,11 +119,7 @@ const Header = () => {
 
       <div className="headerWrapperFixed" ref={headerRef}>
         <div className="headerWrapper">
-          <div className="top-strip bg-blue">
-            <div className="container">
-              
-            </div>
-          </div>
+        
 
           <header className="header">
             <div className="container">
