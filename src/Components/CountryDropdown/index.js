@@ -21,6 +21,12 @@ const CountryDropdown = () => {
 
     const context = useContext(MyContext);
 
+    useEffect(() => {
+        context.setselectedCountry("Vietnam");
+        localStorage.setItem("location", "Vietnam");
+        setcountryList(context.countryList);
+    }, [context]);
+
     const selectCountry = (index, country) => {
         setselectedTab(index);
         setisOpenModal(false);
@@ -29,9 +35,7 @@ const CountryDropdown = () => {
         window.location.href = "/";
     }
 
-    useEffect(() => {
-        setcountryList(context.countryList);
-    }, [])
+    
 
     const filterList = (e) => {
         const keyword = e.target.value.toLowerCase();
