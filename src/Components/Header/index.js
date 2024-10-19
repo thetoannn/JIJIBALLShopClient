@@ -121,10 +121,7 @@ const Header = () => {
         <div className="headerWrapper">
           <div className="top-strip bg-blue">
             <div className="container">
-              <p className="mb-0 mt-0 text-center">
-                Do dịch bệnh <b>COVID 19</b>, đơn hàng có thể được xử lý
-                với một chút chậm trễ
-              </p>
+              
             </div>
           </div>
 
