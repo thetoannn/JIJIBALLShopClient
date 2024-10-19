@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
       </footer>
       <section id="footer">
-        <div id="footer-container">
+        <div id="footer">
           <div id="head-footer" style={{width: "60%"}}>
             <div id="logo-footer">
               <h1><a style={{ color: 'white', fontWeight: 'bold', textDecoration: 'none' }} href="/"> Ji Ji Ball </a> </h1>
